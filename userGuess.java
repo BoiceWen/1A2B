@@ -73,7 +73,7 @@ public class userGuess {
 				}
 			}
 		}		
-		System.out.println();
+		
 		
 		
 	 }
