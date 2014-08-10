@@ -32,10 +32,11 @@ public class userGuess {
 		aCount = 0;
 		bCount = 0;
 		int input = 0;
-		int arrayListLength = 0;
 		int[] guess = new int[4];
+		
 		Scanner scanner = new Scanner(System.in);
 		recieveAns = theAns;
+		
 		System.out.println("請輸入4個數字,一次一個數字");
 		
 		for(int i = 0; i < 4; i++)
