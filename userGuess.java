@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class userGuess {
 	private int[] recieveAns;
-	int aCount = 0;
-	int bCount = 0;
+	private int aCount = 0;
+	private int bCount = 0;
 	private boolean pass ;
-	//private start theNew = new start();
+	
 	public static void main(String[] args)
 	{
 		    
@@ -19,7 +19,7 @@ public class userGuess {
 				test.passCheck();
 				
 			}
-			System.out.println("®¥³ß±zµª¹ï¤F!!");
+			System.out.println("æ­å–œæ‚¨ç­”å°äº†!!");
 			
 				
 			
@@ -36,7 +36,7 @@ public class userGuess {
 		int[] guess = new int[4];
 		Scanner scanner = new Scanner(System.in);
 		recieveAns = theAns;
-		System.out.println("½Ğ¿é¤J4­Ó¼Æ¦r,¤@¦¸¤@­Ó¼Æ¦r");
+		System.out.println("è«‹è¼¸å…¥4å€‹æ•¸å­—,ä¸€æ¬¡ä¸€å€‹æ•¸å­—");
 		
 		for(int i = 0; i < 4; i++)
 		{
@@ -44,7 +44,7 @@ public class userGuess {
 			input = scanner.nextInt();
 			if(input >9)
 			{
-				System.out.println("½Ğ¿é¤J0~9ªº¼Æ¦r");
+				System.out.println("è«‹è¼¸å…¥0~9çš„æ•¸å­—");
 				i--;
 				break;
 			}
