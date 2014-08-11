@@ -1,6 +1,7 @@
 public class start {
 	
 	private int[] ans = new int[4];
+	//產生目標答案
 	public void placeNum()
 	{
 		int[] abb = new int[4];
@@ -13,6 +14,7 @@ public class start {
 			abb[i] = (int)(Math.random()*9+1);			
 			for(int j = 0; j < i; j++ )
 			{
+				//檢查是否重複
 				if(abb[i] == abb[j])
 				{	
 					i= i -1 ;
