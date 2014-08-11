@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-
-
 public class start {
 	
 	private int[] ans = new int[4];
