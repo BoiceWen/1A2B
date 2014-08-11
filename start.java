@@ -5,10 +5,6 @@ public class start {
 	public void placeNum()
 	{
 		int[] abb = new int[4];
-		//ArrayList<Integer> abb1 = new ArrayList<Integer>();
-		
-		//userGuess guess2 = new userGuess();
-		
 		for(int i = 0; i < 4; i++)
 		{
 			abb[i] = (int)(Math.random()*9+1);			
