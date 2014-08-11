@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class userGuess {
 	private int[] recieveAns;
-	private int aCount = 0;
-	private int bCount = 0;
+	private int aCount = 0;//紀錄A的次數
+	private int bCount = 0;//紀錄B的次數
 	private boolean pass ;
 	
 	public static void main(String[] args)
@@ -12,6 +12,7 @@ public class userGuess {
 		    userGuess test = new userGuess();
 			theNew.placeNum();
 			int[] tt= theNew.getAbb();
+			//若為false則重複猜測
 			while(test.pass== false)
 			{
 				test.guess(theNew.getAbb());
@@ -25,7 +26,7 @@ public class userGuess {
 		
 	}
 	
-
+	//執行猜測的動作
 	public void guess(int[] theAns)
 	{
 		aCount = 0;
@@ -43,7 +44,7 @@ public class userGuess {
 			
 			input = scanner.nextInt();
 			if(input >9)
-			{
+			{	//檢查輸入數字是否0~9
 				System.out.println("請輸入0~9的數字");
 				i--;
 				break;
@@ -51,7 +52,7 @@ public class userGuess {
 			else
 				guess[i] = input;
 		}
-
+		//檢查A
 		for(int aCheck = 0; aCheck < guess.length; aCheck++)
 		{
 			if(guess[aCheck] == recieveAns[aCheck])
@@ -61,7 +62,7 @@ public class userGuess {
 				aCount++;
 			}						
 		}
-		
+		//檢查B
 		for(int bCheck1 = 0; bCheck1 < guess.length; bCheck1++ )
 		{
 			for(int bCheck2 = 0; bCheck2 < guess.length; bCheck2++ )
@@ -78,6 +79,7 @@ public class userGuess {
 		
 	 }
 	
+	//最後檢查是否完成過關條件，是為true，否為false
 	public void passCheck()
 	{
 		if(aCount == 4 && bCount ==0)
