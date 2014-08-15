@@ -43,9 +43,9 @@ public class userGuess {
 		{
 			
 			input = scanner.nextInt();
-			if(input >9)
+			if(input >9 || input = 0)
 			{	//檢查輸入數字是否0~9
-				System.out.println("請輸入0~9的數字");
+				System.out.println("請輸入1~9的數字");
 				i--;
 				break;
 			}
