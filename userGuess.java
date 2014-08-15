@@ -51,6 +51,16 @@ public class userGuess {
 			}
 			else
 				guess[i] = input;
+				for(int j = 0; j < i; j++ )
+				{
+				
+					if(guess[i] == guess[j])
+					{	
+						i= i -1 ;
+						System.out.println("數字不可重複");
+						break;
+					}
+				}
 		}
 		//檢查A
 		for(int aCheck = 0; aCheck < guess.length; aCheck++)
